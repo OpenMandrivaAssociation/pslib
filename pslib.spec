@@ -18,6 +18,7 @@ BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libungif-devel
 BuildRequires:	libtiff-devel
+BuildRequires:	perl-XML-Parser
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
