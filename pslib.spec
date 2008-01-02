@@ -19,6 +19,7 @@ BuildRequires:	libpng-devel
 BuildRequires:	libungif-devel
 BuildRequires:	libtiff-devel
 BuildRequires:	perl-XML-Parser
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 PSlib is a C-library for generating multi page PostScript documents. There are
