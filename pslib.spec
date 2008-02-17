@@ -4,13 +4,13 @@
 
 Summary:	PSlib is a C-library for generating multi page PostScript documents
 Name:		pslib
-Version:	0.2.7
-Release:	%mkrel 3
+Version:	0.4.1
+Release:	%mkrel 1
 License:	LGPL
 Group:		System/Libraries
 URL:		http://pslib.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/pslib/pslib-%{version}.tar.bz2
-Source1:	pslib-%{version}-manpages.tar.bz2
+Source0:	http://prdownloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
+Source1:	pslib-%{version}-manpages.tar.gz
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
 #BuildRequires:	docbook-utils
