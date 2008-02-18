@@ -2,7 +2,7 @@
 %define libname %mklibname pslib %{major}
 %define develname %mklibname pslib -d
 
-Summary:	PSlib is a C-library for generating multi page PostScript documents
+Summary:	C-library for generating multi page PostScript documents
 Name:		pslib
 Version:	0.4.1
 Release:	%mkrel 2
@@ -27,7 +27,7 @@ functions for drawing lines, arcs, rectangles, curves, etc. PSlib also provides
 very sophisticated functions for text output including hyphenation and kerning.
 
 %package -n	%{libname}
-Summary:	PSlib is a C-library for generating multi page PostScript documents
+Summary:	C-library for generating multi page PostScript documents
 Group:          System/Libraries
 
 %description -n	%{libname}
