@@ -11,6 +11,7 @@ Group:		System/Libraries
 URL:		http://pslib.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
 Source1:	pslib-%{version}-manpages.tar.gz
+Patch0:		pslib-0.4.1-linkage_fix.diff
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
 #BuildRequires:	docbook-utils
@@ -54,10 +55,15 @@ library.
 %prep
 
 %setup -q -n %{name}-%{version} -a1
+%patch0 -p0
 
 chmod 644 AUTHORS COPYING ChangeLog README
 
+# lib64 fix
+perl -pi -e "s|/lib\b|/%{_lib}|g" configure*
+
 %build
+autoreconf -fis
 
 %configure2_5x
 
@@ -80,7 +86,7 @@ find -type f -name "Makefile" | xargs perl -pi -e "s|/usr/lib\b|%{_libdir}|g"
 #done
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %makeinstall_std
 
@@ -99,7 +105,7 @@ install -m0644 doc/man/*.3 %{buildroot}%{_mandir}/man3/
 %endif
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files -n %{libname} -f %{name}.lang
 %defattr(-,root,root)
