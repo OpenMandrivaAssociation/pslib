@@ -5,7 +5,7 @@
 Summary:	C-library for generating multi page PostScript documents
 Name:		pslib
 Version:	0.4.1
-Release:	%mkrel 4
+Release:	%mkrel 5
 License:	LGPL
 Group:		System/Libraries
 URL:		http://pslib.sourceforge.net/
@@ -19,7 +19,7 @@ BuildRequires:	libpng-devel
 BuildRequires:	libungif-devel
 BuildRequires:	libtiff-devel
 BuildRequires:	perl-XML-Parser
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 PSlib is a C-library for generating multi page PostScript documents. There are
