@@ -16,6 +16,7 @@ BuildRequires:	autoconf2.5
 BuildRequires:	libtool
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
+BuildRequires:	intltool
 #BuildRequires:	docbook-utils
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
