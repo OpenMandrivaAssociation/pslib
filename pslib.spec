@@ -17,6 +17,7 @@ BuildRequires:	libtool
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
 BuildRequires:	intltool
+BuildRequires:	glib2-devel 
 #BuildRequires:	docbook-utils
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
