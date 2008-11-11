@@ -14,6 +14,8 @@ Source1:	pslib-%{version}-manpages.tar.gz
 Patch0:		pslib-0.4.1-linkage_fix.diff
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
+BuildRequires:	gettext
+BuildRequires:	gettext-devel
 #BuildRequires:	docbook-utils
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
