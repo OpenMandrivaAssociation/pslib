@@ -4,15 +4,14 @@
 
 Summary:	C-library for generating multi page PostScript documents
 Name:		pslib
-Version:	0.4.1
-Release:	7
+Version:	0.4.5
+Release:	1
 License:	LGPL
 Group:		System/Libraries
 URL:		http://pslib.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
-Source1:	pslib-%{version}-manpages.tar.gz
+Source1:	pslib-0.4.1-manpages.tar.gz
 Patch0:		pslib-0.4.1-linkage_fix.diff
-Patch1:		pslib-getline.patch
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
 BuildRequires:	gettext
@@ -58,12 +57,8 @@ library.
 %prep
 %setup -q -a1
 %patch0 -p0
-%patch1 -p0
 
 chmod 644 AUTHORS COPYING ChangeLog README
-
-# lib64 fix
-perl -pi -e "s|/lib\b|/%{_lib}|g" configure*
 
 autoreconf -fis
 
