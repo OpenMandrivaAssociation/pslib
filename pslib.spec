@@ -45,8 +45,8 @@ very sophisticated functions for text output including hyphenation and kerning.
 Summary:	Static library and header files for the PSlib library
 Group:		Development/C
 Requires:	%{libname} = %{version}
-Provides:	%{name}-devel = %{version}-{release}
-Provides:	lib%{name}-devel = %{version}-{release}
+Provides:	%{name}-devel = %{EVRD}
+Provides:	lib%{name}-devel = %{EVRD}
 Obsoletes:	%{mklibname pslib 0 -d}
 
 %description -n	%{develname}
