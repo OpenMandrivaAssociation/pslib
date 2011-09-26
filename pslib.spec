@@ -46,7 +46,6 @@ Summary:	Static library and header files for the PSlib library
 Group:		Development/C
 Requires:	%{libname} = %{version}
 Provides:	%{name}-devel = %{EVRD}
-Provides:	lib%{name}-devel = %{EVRD}
 Obsoletes:	%{mklibname pslib 0 -d}
 
 %description -n	%{develname}
