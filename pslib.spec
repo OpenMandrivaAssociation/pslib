@@ -65,9 +65,9 @@ chmod 644 AUTHORS COPYING ChangeLog README
 # lib64 fix
 perl -pi -e "s|/lib\b|/%{_lib}|g" configure*
 
-%build
 autoreconf -fis
 
+%build
 %configure2_5x
 
 # borkiness
