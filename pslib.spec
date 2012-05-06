@@ -5,7 +5,7 @@
 Summary:	C-library for generating multi page PostScript documents
 Name:		pslib
 Version:	0.4.5
-Release:	1
+Release:	2
 License:	LGPL
 Group:		System/Libraries
 URL:		http://pslib.sourceforge.net/
@@ -91,9 +91,11 @@ install -m0644 doc/man/*.3 %{buildroot}%{_mandir}/man3/
 
 %find_lang %{name}
 
+rm -f %{buildroot}%{_libdir}/*.*a
+
 %files -n %{libname} -f %{name}.lang
 %doc AUTHORS COPYING ChangeLog README
-%{_libdir}/*.so.*
+%{_libdir}/*.so.%{major}*
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
 
@@ -101,7 +103,5 @@ install -m0644 doc/man/*.3 %{buildroot}%{_mandir}/man3/
 %dir %{_includedir}/libps
 %{_includedir}/libps/*
 %{_libdir}/*.so
-%{_libdir}/*.a
-%{_libdir}/*.la
 %{_libdir}/pkgconfig/*
 %{_mandir}/man3/*
