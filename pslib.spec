@@ -12,16 +12,15 @@ URL:		http://pslib.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
 Source1:	pslib-0.4.1-manpages.tar.gz
 Patch0:		pslib-0.4.1-linkage_fix.diff
-BuildRequires:	autoconf2.5
-BuildRequires:	libtool
+BuildRequires:	autoconf automake libtool
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
 BuildRequires:	intltool
-BuildRequires:	glib2-devel 
+BuildRequires:	glib2-devel
 #BuildRequires:	docbook-utils
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
-BuildRequires:	libungif-devel
+BuildRequires:	ungif-devel
 BuildRequires:	libtiff-devel
 BuildRequires:	perl-XML-Parser
 
