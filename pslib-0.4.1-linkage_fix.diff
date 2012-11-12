@@ -1,0 +1,11 @@
+--- configure.in	2007-10-30 08:38:30.000000000 +0100
++++ configure.in.oden	2008-11-11 15:42:40.000000000 +0100
+@@ -112,7 +112,7 @@
+ 	AC_CHECK_LIB(png, png_read_image,
+  		[
+ 		HAVE_PNGLIB=1;
+-		PNG_LIBS=-lpng;
++		PNG_LIBS="-lpng -lm";
+ 		AC_DEFINE(HAVE_LIBPNG, 1, "Support for png images")
+ 		],
+ 		[AC_MSG_RESULT([libpng not found. I will compile without png support.]); HAVE_PNGLIB=0],
