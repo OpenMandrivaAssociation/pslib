@@ -104,3 +104,76 @@ rm -f %{buildroot}%{_libdir}/*.*a
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
 %{_mandir}/man3/*
+
+
+%changelog
+* Sun May 06 2012 Oden Eriksson <oeriksson@mandriva.com> 0.4.5-2
++ Revision: 797102
+- fix deps
+- various fixes
+
+* Mon Sep 26 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.4.5-1
++ Revision: 701279
+- new version
+- do autoreconf in %%prep
+- clean out old rpm junk
+- drop ambigious lib%%{name}-devel provides...
+- fix bogus version
+
+* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 0.4.1-6mdv2011.0
++ Revision: 614624
+- the mass rebuild of 2010.1 packages
+
+* Sat Aug 22 2009 Funda Wang <fwang@mandriva.org> 0.4.1-5mdv2010.0
++ Revision: 419597
+- fix build with glibc 2.10
+
+* Tue Nov 11 2008 Oden Eriksson <oeriksson@mandriva.com> 0.4.1-5mdv2009.1
++ Revision: 302226
+- more dep fixes...
+- more dep fixes
+- fix deps
+- fix linkage
+- rebuilt against new libxcb
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild early 2009.0 package (before pixel changes)
+
+  + Pixel <pixel@mandriva.com>
+    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+* Mon Feb 18 2008 Thierry Vignaud <tv@mandriva.org> 0.4.1-3mdv2008.1
++ Revision: 171053
+- rebuild
+- fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+
+* Sun Feb 17 2008 Oden Eriksson <oeriksson@mandriva.com> 0.4.1-2mdv2008.1
++ Revision: 169574
+- fix build on x86_64
+
+* Sun Feb 17 2008 Oden Eriksson <oeriksson@mandriva.com> 0.4.1-1mdv2008.1
++ Revision: 169559
+- 0.4.1
+- regenerated the manpages
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sun Sep 09 2007 Oden Eriksson <oeriksson@mandriva.com> 0.2.7-3mdv2008.0
++ Revision: 83633
+- fix build deps (perl-XML-Parser)
+- Import pslib
+
+
+
+* Sun Sep 09 2007 Oden Eriksson <oeriksson@mandriva.com> 0.2.7-3
+- new devel naming
+
+* Mon Aug 28 2006 Oden Eriksson <oeriksson@mandriva.com> 0.2.7-2
+- provide the manpages generated on cooker
+
+* Thu Aug 03 2006 Oden Eriksson <oeriksson@mandriva.com> 0.2.7-1mdv2007.0
+- initial Mandriva package
