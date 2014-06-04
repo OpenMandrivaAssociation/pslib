@@ -17,7 +17,7 @@ BuildRequires:	autoconf automake libtool
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
 BuildRequires:	intltool
-BuildRequires:	glib2-devel
+BuildRequires:	pkgconfig(glib-2.0)
 #BuildRequires:	docbook-utils
 BuildRequires:	jpeg-devel
 BuildRequires:	png-devel
