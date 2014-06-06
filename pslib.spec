@@ -57,7 +57,7 @@ library.
 %prep
 %setup -q -a1
 %patch0 -p0
-%patch1 -p1
+# %patch1 -p1
 
 chmod 644 AUTHORS COPYING ChangeLog README
 
