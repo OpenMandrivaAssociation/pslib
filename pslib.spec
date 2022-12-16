@@ -9,7 +9,7 @@ Release:	1
 License:	LGPL
 Group:		System/Libraries
 URL:		http://pslib.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
 #Source1:	pslib-0.4.1-manpages.tar.gz
 Patch0:		pslib-0.4.1-linkage_fix.diff
 #Patch1:		pslib-0.4.5-giflib5.patch
