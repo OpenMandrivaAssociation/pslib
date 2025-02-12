@@ -13,7 +13,6 @@ Source0:	https://downloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
 BuildRequires:  docbook-to-man
 BuildRequires:  docbook-utils
 BuildRequires:	gettext
-BuildRequires:	gettext-devel
 BuildRequires:	intltool
 BuildRequires:  perl(XML::Parser)
 BuildRequires:	pkgconfig(glib-2.0)
@@ -84,7 +83,6 @@ find -type f -name "Makefile" | xargs perl -pi -e "s|/usr/lib\b|%{_libdir}|g"
 
 %install
 %make_install
-
 
 # locales
 %find_lang %{name}
