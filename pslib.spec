@@ -32,7 +32,7 @@ very sophisticated functions for text output including hyphenation and kerning.
 %package -n	%{libname}
 Summary:	C-library for generating multi page PostScript documents
 Group:          System/Libraries
-%rename ${oldlibname}
+%rename %{oldlibname}
 
 %description -n	%{libname}
 PSlib is a C-library for generating multi page PostScript documents. There are
