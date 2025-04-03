@@ -14,7 +14,7 @@ Source0:	https://downloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
 BuildRequires:  docbook-to-man
 BuildRequires:  docbook-utils
 BuildRequires:	gettext
-BuildRequires:	gettext-devel
+BuildRequires:	glibc-static-devel
 BuildRequires:	intltool
 BuildRequires:  perl(XML::Parser)
 BuildRequires:	pkgconfig(glib-2.0)
