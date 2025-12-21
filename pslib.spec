@@ -11,6 +11,11 @@ License:	LGPL
 Group:		System/Libraries
 URL:		https://pslib.sourceforge.net/
 Source0:	https://downloads.sourceforge.net/pslib/pslib-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  docbook-to-man
 BuildRequires:  docbook-utils
 BuildRequires:	gettext
